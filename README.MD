@@ -17,4 +17,5 @@
 
 ## 📔 설계 단계
 [📄상세 기획 문서 및 일정 관리 확인하기](https://www.notion.so/Todo-Scheduler-2074248c7c6980aabbe5f71cb513dc25?source=copy_link)   
-[🧑‍🎨웹 디자인 프로토타입 확인하기](https://www.figma.com/design/mUYMp2rpoE2f7U1pOvCPOp/TodoList?node-id=0-1&p=f&t=zljYrPec9T9UlXK6-0)
+[🧑‍🎨웹 디자인 프로토타입 확인하기](https://www.figma.com/design/mUYMp2rpoE2f7U1pOvCPOp/TodoList?node-id=0-1&p=f&t=zljYrPec9T9UlXK6-0)   
+[📁DB스키마 확인하기](https://dbdiagram.io/d/todo-scheduler-68467215058073439757b033)
