@@ -1,4 +1,4 @@
 
 export default function Login(){
-    return(<></>);
+    return(<div className="content"><div><form ><label>aa</label></form></div></div>);
 }

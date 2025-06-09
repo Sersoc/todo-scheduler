@@ -4,6 +4,14 @@
   background-color: #343A40;
   padding: 5px 0;
 }
+.main-bg{
+  
+  background: #212529;
+}
+.content{
+  max-width: 1200px;
+  margin: 0 auto;
+}
 a,
 a:visited,
 a:hover,
