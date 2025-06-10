@@ -20,6 +20,7 @@ export default function Login() {
       <form className="login-box" onSubmit={handleLogin}>
         <h1>Login</h1>
         <section className="input-box">
+            <h2>ID</h2>
           <input
             type="text"
             id="username"
@@ -31,6 +32,7 @@ export default function Login() {
           />
         </section>
         <section className="input-box">
+            <h2>PW</h2>
           <input
             type="password"
             id="userpassword"
