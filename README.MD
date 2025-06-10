@@ -13,7 +13,10 @@
 - DB: MySQL (Docker)
 - Auth: JWT
 ## 🗂️ 디렉토리 구조
-... 아직 미설계(2025-06-03)
+<pre><code>📦 프로젝트 루트 
+├── frontend/ # React 프론트엔드 코드 
+├── backend/ # Node.js 서버 코드 
+└── db/ # 초기 데이터  </code></pre>
 
 ## 📔 설계 단계
 [📄상세 기획 문서 및 일정 관리 확인하기](https://www.notion.so/Todo-Scheduler-2074248c7c6980aabbe5f71cb513dc25?source=copy_link)   
