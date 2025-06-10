@@ -5,10 +5,12 @@ require("dotenv").config();
 const port = process.env.PORT;
 
 const app = express();
+const signInRoute = require("./routes/signInRoute");
+
 
 app.use(cors());
 app.use(express.json());
-
+app.use("/signin",signInRoute);
 app.listen(port,()=>{
     console.log(`Listening : ${port}`)
 });
