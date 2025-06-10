@@ -4,14 +4,11 @@
   background-color: #343A40;
   padding: 5px 0;
 }
-.main-bg{
-  
-  background: #212529;
+h1 {
+  font-size: 2rem;
+  color: #fff;
 }
-.content{
-  max-width: 1200px;
-  margin: 0 auto;
-}
+
 a,
 a:visited,
 a:hover,
@@ -30,4 +27,5 @@ html {
 body {
   margin: 0;
   padding: 0;
+  background-color: #212529;
 }

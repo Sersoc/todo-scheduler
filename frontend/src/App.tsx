@@ -2,9 +2,10 @@ import { Link } from "react-router-dom";
 import "./assets/styles/style.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./components/Login";
+import SignIn from "./components/SignIn";
 function App() {
   return (
-    <div className="main-bg">
+   
       <Router>
         <div className="full-bg">
           <Link to="/">
@@ -13,9 +14,10 @@ function App() {
         </div>
         <Routes>
           <Route path="/" element={<Login />}></Route>
+          <Route path="/signin" element={<SignIn />}></Route>
         </Routes>
       </Router>
-    </div>
+  
   );
 }
 

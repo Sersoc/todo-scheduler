@@ -1,8 +1,60 @@
 .tracking-in-expand {
 	animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
+.login{
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+.login-box{
+  display: flex;
+  background-color: #343A40;
+  width: 500px;
+  color: white;
+  font-size: 2rem;
+  border-radius: 15px;
+  
+  padding: 20px;
+  align-items: center;
+  flex-direction: column;
+}
 
+.input-box {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+}
+.input-box input{
+  width: 100%;
+  padding: 10px 16px 10px 38px;
+  border-radius: 99px;
+  border: solid 3px transparent;
+  font-weight: 500;
+  outline: none;
+  transition: 0.25s;
+  font-size: 25px;
+}
 
+.input-box input:focus {
+  border: solid 3px rgb(5, 248, 208);
+}
+
+.input-box input::placeholder{
+  color: rgb(4, 75, 116);;
+}
+form button{
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px 16px 10px 38px;
+  border-radius: 16px;
+  font-size: 25px;
+
+}
+form button:hover{
+  background-color: aqua;
+  cursor: pointer;
+}
 @keyframes tracking-in-expand {
   0% {
 
