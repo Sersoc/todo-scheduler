@@ -8,7 +8,9 @@ export default function Login() {
   const [userPassword, setUserPassword] = useState("");
   const navigate = useNavigate();
   const handleLogin = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
     const response = await fetch(`http://localhost:5000/login`, {
+      method : "POST",
       headers: {
         "Content-Type": "application/json",
       },
@@ -18,7 +20,7 @@ export default function Login() {
       }),
     });
 
-    event.preventDefault();
+    
 
     const data: LoginResponse = await response.json();
     console.log(`data token ${data.token}`);
@@ -27,7 +29,7 @@ export default function Login() {
     window.location.reload();
   };
 
-  const handlerPage = () => {
+  const handlePage = () => {
     navigate("/signin");
   };
   return (
@@ -59,7 +61,7 @@ export default function Login() {
           />
         </section>
         <button type="submit">Login</button>
-        <button type="button" onClick={handlerPage}>
+        <button type="button" onClick={handlePage}>
           Sign In
         </button>
       </form>

@@ -4,7 +4,7 @@ const { isUserValid } = require("../controllers/loginController");
 
 const router = express.Router();
 
-router.get("/", async (req, res) => {
+router.post("/", async (req, res) => {
   const { userId, userPassword } = req.body;
   try {
     const result = await isUserValid(userId, userPassword);
@@ -15,7 +15,7 @@ router.get("/", async (req, res) => {
       });
       console.log("Token generated:", token);
 
-      return res.json({ token });
+      return res.json({ token:token });
     } else {
       console.log(`Login Failed for user ${userId}`);
       return res.status(401).send("Login Fail");
