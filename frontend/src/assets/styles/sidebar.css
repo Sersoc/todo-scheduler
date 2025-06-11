@@ -1,0 +1,119 @@
+.sidebar {
+    --color-primary:#fff;
+    display: flex;
+    
+    position: fixed;
+    overflow: hidden;
+    top: 50px;
+    left: 24px;
+    bottom: 28px;
+    width: 80px;
+    border-radius: 18px;
+    transition: 0.4s;
+    flex-direction: column;
+}
+
+.sidebar button{
+    border: 0;
+    background: #3a3f44;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 8px;
+    font-family: inherit;
+    cursor: pointer;
+
+}
+/* #2d3e50 – 어두운 네이비톤 (기존 배경보다 약간 밝음)
+
+#1c1c1e – 아주 짙은 회색 (배경과 거의 일치하여 심플)
+
+#3a3f44 – 다크 그레이에 가까운 블루 (아이콘과 조화됨)
+
+#1e88e5 – 머티리얼 블루 (아이콘과 비슷한 색상 톤으로 통일감)
+
+#263238 – 블루-그레이 계열의 다크톤 (전체 톤에 부드럽게 섞임) */
+.sidebar .left,.sidebar .right{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    transition: 0.4s;
+    border-radius: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.sidebar .left{
+    z-index: 1;
+    left: 0;
+    width: 80px;
+    background: #263238;
+}
+.sidebar .right{
+    left: 80px;
+    width: 220px;
+    background: #3a3f44;
+    translate: -100% 0;
+}
+.sidebar .left button{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 18px;
+    display: grid;
+    place-items: center;
+}
+
+.sidebar .left button:hover{
+    background: #1e88e5;
+}
+
+.sidebar .left img{
+    width: 40px;
+    margin: 34px 0 40px;
+}
+
+.sidebar .right h1{
+    color: #fff;
+    font-size: 18px;
+}
+
+.sidebar .right .buttons{
+    display: grid;
+    width: 100%;
+    padding: 16px;
+    gap: 16px;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.sidebar .right button{
+    padding: 8px 8px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.sidebar .right button i{
+    background: #000000;
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 22px;
+    display: grid;
+    place-items: center;
+}
+.sidebar:hover{
+    width: 300px;
+}
+
+.sidebar:hover .left{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.sidebar:hover .right{
+    translate: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
