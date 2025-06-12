@@ -1,4 +1,4 @@
-import { Link, Navigate } from "react-router-dom";
+import {  Navigate } from "react-router-dom";
 import "./assets/styles/style.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./components/Login";
@@ -25,7 +25,7 @@ function App() {
     <UserInfoContext.Provider value={{ userId, setUserId }}>
       <Router>
         <Header/>
-        <Routes>
+        <Routes>  
           <Route
             path="/"
             element={

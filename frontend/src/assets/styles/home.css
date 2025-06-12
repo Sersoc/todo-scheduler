@@ -1,4 +1,8 @@
 .home {
+    display: grid;
     margin: 0;
     height: 100vh;
+  grid-template-columns: 300px 1fr; /* 열 너비 설정 */
+  /* grid-template-rows: auto auto;          행 높이 설정 */
+  gap: 10px; /* 셀 사이 간격 */
 }
